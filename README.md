@@ -174,7 +174,7 @@ Applies 2D WELDON-pooling operation on the whole image. The number of output fea
 
 The parameters are the following:
   * `kMax`: The number of top instances. It is possible to define the number of selected regions (`kMax >= 1`) or the proportion of selected regions (`0 <= kMax < 1`). If `kMax < 0`, `kMax` is set to `0`. Default is `kMax = 1`.
-  * `kMin`: The number of low instances. It is possible to define the number of selected regions (`kMin >= 1`) or the proportion of selected regions (`0 <= kMin < 1`). If `kMin < 0`, `kMin` is set to `0`. Default is `kMin = 1`.
+  * `kMin`: The number of low instances. It is possible to define the number of selected regions (`kMin >= 1`) or the proportion of selected regions (`0 <= kMin < 1`). If `kMin < 0`, `kMin` is set to `0`. Default is `kMin = kMax`.
 
 If the input image is a 4D tensor `nBatchImage x nInputPlane x w x h`, the output image size will be `nBatchImage x nInputPlane x 1 x 1` where `w` and `h` are spatial image dimensions.
 
